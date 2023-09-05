@@ -52,7 +52,6 @@ async function loadPostData() {
         const titleElements = postDiv.querySelectorAll('.postTitle');
         const schoolElements = postDiv.querySelectorAll('.postSchool');
         const writerElements = postDiv.querySelectorAll('.postWriter');
-        console.log(product);
         setImage(imageElements, product);
         setTitleText(titleElements, product);
         setSchoolText(schoolElements, product);
@@ -64,5 +63,5 @@ async function loadPostData() {
 loadPostData();
 
 getProductIds()
-  .then(dataIndex => console.log(dataIndex))
+  .then()
   .catch(error => console.error('Error getting product IDs:', error));
